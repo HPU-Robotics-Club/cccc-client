@@ -2,8 +2,8 @@ from approxeng.input.selectbinder import ControllerResource
 from time import sleep
 import requests
 
-hostname = "10.240.68.93"
-port = 3000
+hostname = "10.240.143.219"
+port = 5000
 
 def registerControllerListener():
     while True:
@@ -28,7 +28,6 @@ def registerControllerListener():
                         "controller_dup": dup,
                         "controller_ddown": ddown
                     })
-
                     
                     print(res.text)
 
